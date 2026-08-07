@@ -1,0 +1,14 @@
+/* Cursor override: use the normal system cursor and hide the custom ring. */
+body {
+  cursor: auto !important;
+}
+
+a,
+button,
+[role="button"] {
+  cursor: pointer !important;
+}
+
+.custom-cursor {
+  display: none !important;
+}
