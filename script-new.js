@@ -1,0 +1,1 @@
+const motion=document.createElement('script');motion.src='motion.js';document.head.appendChild(motion);
