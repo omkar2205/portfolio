@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#050507" />
-  <title>Omkar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="P Omkareshwar Reddy. Quality, compliance, operations, people leadership and practical automation." />
+  <meta name="theme-color" content="#07070a" />
+  <title>P Omkareshwar Reddy | Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,211 +13,244 @@
   <link rel="stylesheet" href="styles-v2.css" />
 </head>
 <body>
+  <div class="page-progress" aria-hidden="true"><span id="page-progress-bar"></span></div>
+
   <header class="site-header">
-    <a class="brand" href="#top">OMKAR</a>
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand-mark">OR</span>
+      <span class="brand-copy">OMKAR</span>
+    </a>
 
     <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#experience" data-nav="experience">Experience</a>
+      <a href="#contact" data-nav="contact">Contact</a>
     </nav>
 
     <a class="header-link" href="https://www.linkedin.com/in/reddyop/" target="_blank" rel="noreferrer">
-      LinkedIn
+      LinkedIn <span>↗</span>
     </a>
   </header>
 
   <main id="top">
-    <!-- FRONT PARALLAX -->
-    <section class="scene front-scene" id="about">
-      <div class="visual visual-front" aria-hidden="true">
-        <div class="aura aura-red"></div>
-        <div class="aura aura-blue"></div>
-        <div class="portrait-shell">
-          <img src="assets/omkar-portrait-front.svg" alt="Portrait of Omkar" />
+    <section class="chapter front-chapter" id="about" data-chapter="front" data-steps="3">
+      <div class="chapter-sticky">
+        <div class="chapter-grid shell">
+          <div class="chapter-copy" aria-live="polite">
+            <article class="copy-state is-active" data-copy-step="0">
+              <div class="eyebrow-row">
+                <span>P Omkareshwar Reddy</span>
+                <span>Associate Manager</span>
+              </div>
+              <h1>I make complicated operations behave.</h1>
+              <p class="hero-lede">Quality, compliance, operations, people leadership and practical automation. Eight-plus years of finding the part that is actually broken and making it easier to run.</p>
+
+              <div class="signal-row" aria-label="Professional highlights">
+                <span><strong>8+</strong> years</span>
+                <span><strong>Multi</strong> department</span>
+                <span><strong>Six Sigma</strong> Green Belt</span>
+              </div>
+
+              <p class="aside-note">The résumé version has bullet points. This version has better lighting.</p>
+            </article>
+
+            <article class="copy-state" data-copy-step="1">
+              <p class="section-kicker">Operating range</p>
+              <h2>Lead. Fix. Build.</h2>
+              <p class="section-intro">Different problems, same operating system: understand what is happening, make ownership obvious, then remove the unnecessary friction.</p>
+
+              <div class="ability-list">
+                <div class="ability-row">
+                  <span>01</span>
+                  <h3>Lead things</h3>
+                  <p>Teams, priorities, performance, coaching and stakeholder alignment.</p>
+                </div>
+                <div class="ability-row">
+                  <span>02</span>
+                  <h3>Fix things</h3>
+                  <p>Quality gaps, operational risk, root causes and unclear workflows.</p>
+                </div>
+                <div class="ability-row">
+                  <span>03</span>
+                  <h3>Build things</h3>
+                  <p>Dashboards, reporting systems, trackers and lightweight automation.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="copy-state" data-copy-step="2">
+              <p class="section-kicker">Where I add value</p>
+              <h2>Structure, judgement and execution.</h2>
+              <p class="section-intro">Not another four-box capability grid. These are the four lenses I use when something needs to become clearer, safer or simply less annoying.</p>
+
+              <div class="orbit-legend">
+                <span class="legend-red">Structure</span>
+                <span class="legend-blue">Judgement</span>
+                <span>Execution</span>
+                <span>People</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="chapter-visual front-visual" aria-hidden="true">
+            <div class="visual-grid"></div>
+            <div class="visual-orbit orbit-a"></div>
+            <div class="visual-orbit orbit-b"></div>
+            <div class="portrait-stage">
+              <div class="portrait-signal signal-red"></div>
+              <div class="portrait-signal signal-blue"></div>
+              <img src="assets/omkar-portrait-front.svg" alt="" />
+              <span class="portrait-label label-a">QUALITY</span>
+              <span class="portrait-label label-b">OPERATIONS</span>
+              <span class="portrait-label label-c">AUTOMATION</span>
+            </div>
+
+            <div class="chapter-counter"><span id="front-step-counter">01</span><small>/03</small></div>
+
+            <div class="value-orbit" id="value-orbit">
+              <article class="orbit-card orbit-red">
+                <small>01 / STRUCTURE</small>
+                <strong>Quality &amp; Compliance</strong>
+                <span>Governance, controls and consistent decisions.</span>
+              </article>
+              <article class="orbit-card orbit-blue">
+                <small>02 / JUDGEMENT</small>
+                <strong>Operations Excellence</strong>
+                <span>Process design, RCA and standardisation.</span>
+              </article>
+              <article class="orbit-card orbit-ink">
+                <small>03 / EXECUTION</small>
+                <strong>Automation &amp; Analytics</strong>
+                <span>Useful reporting, dashboards and tools.</span>
+              </article>
+              <article class="orbit-card orbit-line">
+                <small>04 / PEOPLE</small>
+                <strong>Leadership</strong>
+                <span>Clarity, coaching and cross-functional delivery.</span>
+              </article>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="steps">
-        <article class="step hero-step">
-          <div class="copy copy-hero">
-            <p class="tag">P Omkareshwar Reddy</p>
-            <h1>I make complex operations work better.</h1>
-            <p class="lede">
-              Associate Manager focused on quality, compliance, operations,
-              people leadership and practical automation.
-            </p>
-
-            <div class="meta-row">
-              <span>8+ years of experience</span>
-              <span>Secunderabad, India</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="step capability-step">
-          <div class="copy">
-            <p class="tag">How I add value</p>
-            <h2>Lead. Fix. Build.</h2>
-            <p>
-              I work where structure, judgement and execution meet. I help teams
-              do stronger work, make processes clearer and turn recurring problems
-              into better systems.
-            </p>
-
-            <div class="capability-grid">
-              <div class="mini-card">
-                <span>01</span>
-                <h3>I lead things.</h3>
-                <p>Teams, priorities, accountability and direction.</p>
-              </div>
-              <div class="mini-card">
-                <span>02</span>
-                <h3>I fix things.</h3>
-                <p>Quality gaps, risk, root causes and unclear workflows.</p>
-              </div>
-              <div class="mini-card">
-                <span>03</span>
-                <h3>I build things.</h3>
-                <p>Dashboards, reporting systems and practical automation.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="step rotator-step" id="value-rotator-section">
-          <div class="copy copy-wide">
-            <p class="tag">Where I add value</p>
-            <h2>Structure, judgement and execution.</h2>
-            <p>
-              Not just ideas. Not just oversight. I work across operational clarity,
-              decision making and follow-through, then turn that into something
-              people can actually use.
-            </p>
-          </div>
-
-          <div class="rotator-wrap">
-            <div class="rotator-track" id="value-rotator-track">
-              <article class="rotator-card card-red">
-                <small>STRUCTURE</small>
-                <h3>Quality and Compliance</h3>
-                <p>Governance, risk controls and consistent decision making.</p>
-              </article>
-
-              <article class="rotator-card card-blue">
-                <small>JUDGEMENT</small>
-                <h3>Operations Excellence</h3>
-                <p>Process design, root cause analysis and standardisation.</p>
-              </article>
-
-              <article class="rotator-card card-dark">
-                <small>EXECUTION</small>
-                <h3>Automation and Analytics</h3>
-                <p>Reporting, dashboards and practical tools that improve delivery.</p>
-              </article>
-
-              <article class="rotator-card card-outline">
-                <small>PEOPLE</small>
-                <h3>Leadership</h3>
-                <p>Coaching, performance, clarity and cross-functional alignment.</p>
-              </article>
-            </div>
-          </div>
-        </article>
+        <div class="chapter-footer shell" aria-hidden="true">
+          <span>Scroll to change chapter</span>
+          <div class="chapter-rail"><i id="front-rail"></i></div>
+          <span>01 → 03</span>
+        </div>
       </div>
     </section>
 
-    <!-- BACK PARALLAX -->
-    <section class="scene back-scene" id="experience">
-      <div class="visual visual-back" aria-hidden="true">
-        <div class="aura aura-red back-red"></div>
-        <div class="aura aura-blue back-blue"></div>
-        <div class="portrait-shell portrait-shell-back">
-          <img src="assets/omkar-portrait-back.svg" alt="Rear portrait of Omkar" />
+    <section class="intermission" aria-label="Working style">
+      <div class="shell intermission-grid">
+        <p class="section-kicker">Default response to operational chaos</p>
+        <blockquote>“Let me understand what is actually happening.”</blockquote>
+        <div class="intermission-notes">
+          <span>Calm under pressure</span>
+          <span>Suspicious of manual work</span>
+          <span>Allergic to unclear ownership</span>
+          <span>Still judging merged cells</span>
         </div>
-      </div>
-
-      <div class="steps">
-        <article class="step experience-step">
-          <div class="copy">
-            <p class="tag">Experience</p>
-            <h2>Built through support, compliance and leadership.</h2>
-            <p>
-              The roles changed. The common thread did not. Understand the problem,
-              make the work clearer and improve the way it runs.
-            </p>
-
-            <div class="timeline-list">
-              <div class="timeline-item">
-                <span>2018 to 2021</span>
-                <h3>Technical Support</h3>
-                <p>Structured troubleshooting, service quality and customer-focused problem solving.</p>
-              </div>
-              <div class="timeline-item">
-                <span>2021 to Present</span>
-                <h3>Operations and Quality</h3>
-                <p>Compliance, training, governance, team leadership and continuous improvement.</p>
-              </div>
-              <div class="timeline-item">
-                <span>Today</span>
-                <h3>Associate Manager</h3>
-                <p>Leading quality and compliance while building practical systems that improve visibility and execution.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="step foundation-step">
-          <div class="copy copy-wide">
-            <p class="tag">Professional foundation</p>
-            <h2>Grounded in operations. Sharpened by responsibility.</h2>
-            <p>
-              My background combines day-to-day delivery, quality oversight,
-              process improvement, documentation, training and practical systems thinking.
-            </p>
-
-            <div class="foundation-grid">
-              <div class="foundation-card">
-                <span>01</span>
-                <h3>8+ years</h3>
-                <p>Professional experience across support, compliance and operations.</p>
-              </div>
-
-              <div class="foundation-card">
-                <span>02</span>
-                <h3>Multiple departments</h3>
-                <p>Worked across different teams, functions and operating needs.</p>
-              </div>
-
-              <div class="foundation-card">
-                <span>03</span>
-                <h3>Six Sigma Green Belt</h3>
-                <p>Process improvement and structured problem solving.</p>
-              </div>
-
-              <div class="foundation-card">
-                <span>04</span>
-                <h3>B.Com (Computers)</h3>
-                <p>Kakatiya University.</p>
-              </div>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <section class="chapter back-chapter" id="experience" data-chapter="back" data-steps="2">
+      <div class="chapter-sticky">
+        <div class="chapter-grid chapter-grid-reverse shell">
+          <div class="chapter-visual back-visual" aria-hidden="true">
+            <div class="visual-grid"></div>
+            <div class="visual-orbit orbit-c"></div>
+            <div class="portrait-stage portrait-stage-back">
+              <div class="portrait-signal signal-red"></div>
+              <div class="portrait-signal signal-blue"></div>
+              <img src="assets/omkar-portrait-back.svg" alt="" />
+              <span class="portrait-label label-a">SUPPORT</span>
+              <span class="portrait-label label-b">COMPLIANCE</span>
+              <span class="portrait-label label-c">LEADERSHIP</span>
+            </div>
+            <div class="chapter-counter back-counter"><span id="back-step-counter">01</span><small>/02</small></div>
+          </div>
+
+          <div class="chapter-copy back-copy">
+            <article class="copy-state is-active" data-back-step="0">
+              <p class="section-kicker">Character development</p>
+              <h2>Support taught me to solve. Operations taught me where to look.</h2>
+              <p class="section-intro">The titles changed. The useful habit stayed the same: understand the problem before trying to look impressive solving it.</p>
+
+              <div class="timeline-compact">
+                <div>
+                  <span>2018–2021</span>
+                  <strong>Technical Support</strong>
+                  <p>Troubleshooting, service quality, incident handling and customer-focused problem solving.</p>
+                </div>
+                <div>
+                  <span>2021–2025</span>
+                  <strong>Compliance, Training &amp; Team Leadership</strong>
+                  <p>Quality decisions, SOPs, coaching, delivery and increasingly complicated responsibilities.</p>
+                </div>
+                <div>
+                  <span>Now</span>
+                  <strong>Associate Manager</strong>
+                  <p>Quality, compliance, governance, operational improvement and practical systems that improve visibility.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="copy-state" data-back-step="1">
+              <p class="section-kicker">Professional foundation</p>
+              <h2>Broad enough to connect the dots. Specific enough to fix them.</h2>
+              <p class="section-intro">A mix of operations experience, structured improvement, people leadership and enough technical curiosity to keep turning recurring work into better systems.</p>
+
+              <div class="foundation-matrix">
+                <div>
+                  <small>EXPERIENCE</small>
+                  <strong>8+ years</strong>
+                  <span>Support, compliance, quality and operations.</span>
+                </div>
+                <div>
+                  <small>SCOPE</small>
+                  <strong>Multiple departments</strong>
+                  <span>Different teams, functions and operating needs.</span>
+                </div>
+                <div>
+                  <small>METHOD</small>
+                  <strong>Six Sigma Green Belt</strong>
+                  <span>Structured improvement and problem solving.</span>
+                </div>
+                <div>
+                  <small>FOUNDATION</small>
+                  <strong>B.Com (Computers)</strong>
+                  <span>Kakatiya University.</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="chapter-footer shell" aria-hidden="true">
+          <span>Experience → foundation</span>
+          <div class="chapter-rail"><i id="back-rail"></i></div>
+          <span>01 → 02</span>
+        </div>
+      </div>
+    </section>
+
     <section class="contact-section" id="contact">
-      <div class="contact-glow"></div>
-      <p class="tag">Contact</p>
-      <h2>Better systems start with a clear problem.</h2>
-      <p class="contact-copy">
-        If the work is messy, unclear, manual or unnecessarily difficult,
-        that is usually where I am most useful.
-      </p>
+      <div class="shell contact-board">
+        <div class="contact-signal">
+          <p class="section-kicker">Contact</p>
+          <h2>Give me the complicated thing.</h2>
+          <p>Preferably with context. Apparently that part is optional.</p>
+          <div class="contact-code">CASE TYPE: CHAOTIC / USEFUL</div>
+        </div>
 
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/reddyop/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <div class="contact-action">
+          <span class="contact-index">08+</span>
+          <p>Better systems usually start with somebody admitting the current one is annoying.</p>
+          <a href="https://www.linkedin.com/in/reddyop/" target="_blank" rel="noreferrer" class="primary-link">
+            LinkedIn <span>↗</span>
+          </a>
+          <small>Questionable jokes. Surprisingly useful outcomes.</small>
+        </div>
       </div>
     </section>
   </main>
