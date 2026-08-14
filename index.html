@@ -9,26 +9,68 @@
 
   <link rel="stylesheet" href="styles-v2.css" />
   <style>
-    html,body,button,a,input,textarea,select,h1,h2,h3,.brand-mark,.brand-copy,.flow-track,blockquote,.foundation-matrix strong{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important}
+    html,body,button,a,input,textarea,select,h1,h2,h3,.brand-copy,.flow-track,blockquote,.foundation-matrix strong{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important}
     h1,h2,blockquote{font-weight:700;letter-spacing:-.055em}
-    .brand-copy,.brand-mark,.flow-track{font-weight:700}
+    .brand-copy,.flow-track{font-weight:700}
+
+    body::before{display:none!important}
+
+    .site-header{
+      position:absolute!important;
+      top:0!important;
+      left:0!important;
+      right:0!important;
+      transform:none!important;
+      width:100%!important;
+      min-height:0!important;
+      padding:28px 4vw!important;
+      display:flex!important;
+      align-items:center!important;
+      justify-content:space-between!important;
+      border:0!important;
+      border-radius:0!important;
+      background:transparent!important;
+      backdrop-filter:none!important;
+      box-shadow:none!important;
+    }
+    .brand{gap:0!important}
+    .brand-copy{font-size:13px!important;letter-spacing:.08em!important}
+    .desktop-nav{margin-left:auto!important;margin-right:24px!important;padding:0!important;gap:24px!important}
+    .desktop-nav a,.header-link{padding:0!important;border-radius:0!important;background:transparent!important;font-size:12px!important;color:rgba(247,243,236,.62)!important;letter-spacing:.01em!important}
+    .desktop-nav a:hover,.desktop-nav a.is-active,.header-link:hover{color:#f7f3ec!important;background:transparent!important}
+
     .portrait-core:before{display:none!important}
     .portrait-core{width:min(38vw,560px);height:94%}
     .portrait-core img{width:96%;filter:drop-shadow(0 28px 38px rgba(0,0,0,.42))}
-    .core-grid{inset:10% -5% 4%;border-radius:0;opacity:.11;mask-image:radial-gradient(circle at center,#000 7%,transparent 74%)}
-    .core-ring{opacity:.72}
-    .portrait-caption{bottom:10px;padding:0;border:0;border-radius:0;background:transparent;backdrop-filter:none;letter-spacing:.18em;text-shadow:0 2px 14px rgba(0,0,0,.72)}
-    .portrait-caption i{width:18px;height:1px;border-radius:0;background:rgba(255,255,255,.28)}
+    .core-grid{display:none!important}
+    .core-ring{display:none!important}
+    .portrait-glow{width:300px!important;height:390px!important;border-radius:50%!important;filter:blur(100px)!important;opacity:.22!important}
+    .glow-red{left:4%!important;top:20%!important}
+    .glow-blue{right:2%!important;top:16%!important}
+    .portrait-caption{bottom:12px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;backdrop-filter:none!important;letter-spacing:.16em!important;text-shadow:0 2px 14px rgba(0,0,0,.72)!important}
+    .portrait-caption i{width:18px!important;height:1px!important;border-radius:0!important;background:rgba(255,255,255,.24)!important}
+
     .chapter-counter{display:none!important}
     .ability-row{grid-template-columns:132px 1fr!important}
     .chapter-footer{grid-template-columns:auto 1fr auto}
-    .signal-row span{border-radius:6px;letter-spacing:.01em}
-    .site-header{border-radius:12px}
-    .brand-mark{border-radius:7px}
-    .desktop-nav a,.header-link{letter-spacing:.01em}
-    .flow-track{letter-spacing:-.06em}
-    .flow-track em{-webkit-text-stroke:1px rgba(247,243,236,.36)}
-    @media(max-width:860px){.portrait-core{width:min(78vw,470px)}.ability-row{grid-template-columns:1fr!important}}
+    .signal-row span{border-radius:2px!important;background:transparent!important;border-color:rgba(255,255,255,.16)!important;letter-spacing:.01em}
+
+    .flow-track{letter-spacing:-.06em;color:rgba(247,243,236,.82)!important}
+    .flow-track em{-webkit-text-stroke:0!important;color:rgba(247,243,236,.25)!important}
+    .flow-lane-far{opacity:.28!important;filter:blur(1px)!important}
+    .flow-lane-mid{opacity:.56!important}
+    .flow-lane-near{opacity:.84!important}
+
+    .intermission{background:#e9e6df!important}
+    .contact-section{background:linear-gradient(135deg,#b5122d,#dc233c 62%,#b71531)!important}
+    .contact-section::after{opacity:.32!important}
+
+    @media(max-width:860px){
+      .site-header{padding:20px 5vw!important}
+      .desktop-nav{display:none!important}
+      .portrait-core{width:min(78vw,470px)}
+      .ability-row{grid-template-columns:1fr!important}
+    }
   </style>
 </head>
 <body>
@@ -36,7 +78,6 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Back to top">
-      <span class="brand-mark">OR</span>
       <span class="brand-copy">OMKAR</span>
     </a>
 
@@ -46,7 +87,7 @@
       <a href="#contact" data-nav="contact">Contact</a>
     </nav>
 
-    <a class="header-link" href="https://www.linkedin.com/in/reddyop/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+    <a class="header-link" href="https://www.linkedin.com/in/reddyop/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
   </header>
 
   <main id="top">
@@ -77,9 +118,6 @@
           </div>
 
           <div class="portrait-core front-core" aria-hidden="true">
-            <div class="core-grid"></div>
-            <div class="core-ring ring-red"></div>
-            <div class="core-ring ring-blue"></div>
             <div class="portrait-glow glow-red"></div>
             <div class="portrait-glow glow-blue"></div>
             <img src="assets/omkar-portrait-front.svg" alt="" />
@@ -152,9 +190,6 @@
           </div>
 
           <div class="portrait-core back-core" aria-hidden="true">
-            <div class="core-grid"></div>
-            <div class="core-ring ring-red"></div>
-            <div class="core-ring ring-blue"></div>
             <div class="portrait-glow glow-red"></div>
             <div class="portrait-glow glow-blue"></div>
             <img src="assets/omkar-portrait-back.svg" alt="" />
@@ -194,7 +229,7 @@
         </div>
         <div class="contact-action">
           <p>Better systems usually start with somebody admitting the current one is annoying.</p>
-          <a href="https://www.linkedin.com/in/reddyop/" target="_blank" rel="noreferrer" class="primary-link">LinkedIn <span>↗</span></a>
+          <a href="https://www.linkedin.com/in/reddyop/" target="_blank" rel="noreferrer" class="primary-link">LinkedIn ↗</a>
           <small>Questionable jokes. Surprisingly useful outcomes.</small>
         </div>
       </div>
